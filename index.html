@@ -36,13 +36,15 @@
             <div class="container">
                 <div class="carousel">
                     <i class="fas fa-chevron-left chevron" @click="prevImage"></i>
-                    <img :src="images[imageIndex]" alt="">
+                    <img :src="images[imageIndex].img" alt="">
                     <i class="fas fa-chevron-right chevron" @click="nextImage"></i>
                     <div class="bullets">
                         <i class="fas fa-circle" v-for="(image, index) in images" :class="imageIndex == index ? 'active' : '' " @click="imageIndex = index"></i>
                     </div>
                 </div>
-                
+                <div class="underline">
+                    <h2 id="paese"> The Amazing {{ images[imageIndex].nome }}</h2>
+                </div>
             </div>
         </div>
 

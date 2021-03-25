@@ -23,7 +23,7 @@ header {
 }
 
 h1 {
-    font-size: 24px;
+    font-size: 34px;
     color: #EAD637;
 }
 
@@ -32,12 +32,13 @@ h1 {
     width: 80%;
     margin: auto;
     display: flex;
+    flex-direction: column;
 }
 
 .carousel {
     margin: auto;
     width: 600px;
-    height: 400px;
+    height: 300px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -74,4 +75,13 @@ h1 {
 
 .active {
     color: #EAD637;
+}
+
+.underline {
+    margin-bottom: 100px;
+}
+
+#paese {
+    font-size:30px;
+    text-align: center;
 }
