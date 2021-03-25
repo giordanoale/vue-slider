@@ -18,6 +18,8 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+    position: fixed;
+    width: 100%;
 }
 
 h1 {
@@ -39,14 +41,37 @@ h1 {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
-.carousel i {
+.carousel .chevron {
     font-size: 30px;
     cursor: pointer;
     color: #1D2D44;
 }
 
 .carousel img {
-    width: 80%;
+    height: 100%;
+    width: 90%;
+    object-fit: cover;
+}
+
+.bullets {
+    background-color: rgba(0,0,0,0.7);
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 5px 7px;
+    border-radius: 5px;
+}
+
+.bullets i {
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 5px;
+}
+
+.active {
+    color: #EAD637;
 }
