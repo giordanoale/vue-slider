@@ -9,11 +9,20 @@ body {
 }
 
 #root {
-    background-color: aquamarine;
+    background-color: #7FFFD4;
 }
 
 header {
-    background-color: #32908F;
+    background-color: #1D2D44;
+    height: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    font-size: 24px;
+    color: #EAD637;
 }
 
 .container {
@@ -35,5 +44,9 @@ header {
 .carousel i {
     font-size: 30px;
     cursor: pointer;
-    color: #2F0601;
+    color: #1D2D44;
+}
+
+.carousel img {
+    width: 80%;
 }

@@ -30,11 +30,14 @@
     <body>
         
         <div id="root">
+            <header>
+                <h1>Amalfi Coast: The Views</h1>
+            </header>
             <div class="container">
                 <div class="carousel">
-                    <i class="fas fa-chevron-left"></i>
-                    <img src="https://files.salsacdn.com//article/7086_Positano/imagemain/Dollarphotoclub-75249551-1770x1152_z_0_63_514.20181107161534.jpg" alt="">
-                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-left" @click="prevImage"></i>
+                    <img :src="images[imageIndex]" alt="">
+                    <i class="fas fa-chevron-right" @click="nextImage"></i>
                 </div>
             </div>
         </div>
