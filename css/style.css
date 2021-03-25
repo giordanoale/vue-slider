@@ -1,0 +1,39 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+#root {
+    background-color: aquamarine;
+}
+
+header {
+    background-color: #32908F;
+}
+
+.container {
+    height: 100vh;
+    width: 80%;
+    margin: auto;
+    display: flex;
+}
+
+.carousel {
+    margin: auto;
+    width: 600px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.carousel i {
+    font-size: 30px;
+    cursor: pointer;
+    color: #2F0601;
+}
